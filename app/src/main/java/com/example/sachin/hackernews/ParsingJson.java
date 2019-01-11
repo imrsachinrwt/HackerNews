@@ -41,7 +41,7 @@ public class ParsingJson extends AsyncTask<String, Void, List<HackerFeed>> imple
         Log.d(TAG, "onPostExecute: onPostExecute Started");
         Log.d(TAG, "onPostExecute: List is "+s.toString());
         if(mcallBack!=null){
-            Log.d(TAG, "onPostExecute: List is "+s);
+            Log.d(TAG, "onPostExecute: list is "+s);
             mcallBack.onJsonDataAvailable(s,downloadStatus);
         }
 
